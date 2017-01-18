@@ -18,8 +18,11 @@
   "devDependencies": {
     "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
+    "babel-plugin-transform-regenerator": "^6.21.0",
+    "babel-polyfill": "^6.20.0",
     "babel-preset-latest": "^6.16.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
   },
   "ava": {
     "require": [
