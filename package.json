@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js --exec babel-node",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa": "^1.2.4"
+    "koa": "^1.2.4",
+    "ytdl-core": "^0.7.21"
   },
   "devDependencies": {
+    "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "nodemon": "^1.11.0"
