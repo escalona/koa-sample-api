@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js --exec babel-node",
-    "test": "ava"
+    "test": "ava --verbose"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.4.7",
     "koa": "^1.2.4",
+    "koa-router": "^5.4.0",
     "ytdl-core": "^0.7.21"
   },
   "devDependencies": {
@@ -18,5 +20,11 @@
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "nodemon": "^1.11.0"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   }
 }
